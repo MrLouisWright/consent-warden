@@ -1,5 +1,7 @@
 # consent-warden
 
+[![npm version](https://img.shields.io/npm/v/consent-warden.svg)](https://www.npmjs.com/package/consent-warden) [![CI](https://github.com/MrLouisWright/consent-warden/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/consent-warden/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/consent-warden.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > Check that your cookie banner actually behaves: nothing non-essential loads before opt-in, Reject is as easy as Accept, and consent can be withdrawn.
 
 Most cookie-banner enforcement (ICO, CNIL, noyb complaints) is about behaviour, not cookie flags: the Meta pixel fires before anyone clicks, Consent Mode defaults to granted, Reject is a grey link hidden behind Settings, boxes are pre-ticked, and once dismissed there is no way back. `consent-warden` reads the built HTML and checks how trackers are loaded relative to the banner and how the banner itself is built, reporting each problem with the file, line, severity and a **concrete fix**.
