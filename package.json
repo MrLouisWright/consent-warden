@@ -1,6 +1,6 @@
 {
   "name": "consent-warden",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check cookie-banner consent behaviour in your built site: trackers and embeds that load before opt-in, missing banner, Consent Mode defaults, missing or less prominent Reject, pre-ticked boxes, implied consent and no way to withdraw. GDPR/PECR. SARIF, allowlist with expiry, GitHub Action. Zero deps.",
   "type": "module",
   "main": "./src/index.js",
