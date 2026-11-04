@@ -69,7 +69,7 @@ HIGH     index.html:6 Consent checkbox "marketing" is pre-ticked [consent-preche
 ## Options
 
 ```text
-consent-warden 1.0.0 — check cookie-banner consent behaviour in your built site
+consent-warden 1.0.1 — check cookie-banner consent behaviour in your built site
 
 Usage: consent-warden [site-dir] [options]
 
@@ -172,11 +172,19 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev consent-warden
+```
+
 ```js
 import { check } from "consent-warden";
 const report = check("dist", { essential: ["plausible"] });
 console.log(report.counts);
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("consent-warden")` from CommonJS.
 
 Types are included.
 
